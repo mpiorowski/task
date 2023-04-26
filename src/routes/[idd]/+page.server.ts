@@ -14,6 +14,10 @@ export type Anime = {
                 large_image_url: string;
             };
         }
+        genres: {
+            name: string;
+        }[];
+        synopsis: string;
     }
 };
 
@@ -28,17 +32,17 @@ export const load = (async ({ params }) => {
 export const actions = {
     addToFavorites: async ({ request }) => {
         const form = await request.formData();
+        const mal_id = form.get("mal_id") as unknown as number;
+        const title = form.get("title") as unknown as string;
+        const image = form.get("image") as unknown as string;
 
         // Here we would use zod to validate the form data
         // And after that the form data would be typed as
         // { mal_id: number, title: string, image: string }
         // :)
-        const mal_id = form.get("mal_id") as unknown as number;
-        const title = form.get("title") as unknown as string;
-        const image = form.get("image") as unknown as string;
-
         favorites.set(mal_id, { title: title, image: image });
 
         return { success: true };
     },
 } satisfies Actions;
+
