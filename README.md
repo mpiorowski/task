@@ -14,7 +14,7 @@ This is a very simple app built using SvelteKit with TailwindCss, with a ready-t
 
 ## IMPORTANT
 1. Copy this repo (don't fork it!).
-2. Create a new branch on your github and start working there.  
+2. Create a new branch on Your github and start working there.  
 3. After finish, create a Pull Request from Your branch to Your Main and invite me. This way i will be able to see all the changes, and my repo will be clean for the next candidate :).
 4. Please check that Your example can be run without any additional configuration, by using:
 ```
@@ -23,7 +23,7 @@ docker-compose up --build
 Easy way to check that: 
 - delete repo
 - clone it again
-- checkout Your branch
+- switch to Your branch
 - run the command :)
 
 ## Tasks
