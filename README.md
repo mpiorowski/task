@@ -10,30 +10,24 @@ docker-compose up --build
 
 ## Project overview
 
-This is a very simple app built using SvelteKit with TailwindCss, with a ready-to-use BaaS (Backend as a Service) called PocketBase.  
-It uses an open API to download a list of anime and display them.  
-You can access anime details and add them to favorites.  
-All favorites are then displayed on the right side of the screen.  
-This API has a rate limiter, so sometimes there might be some errors.
-
-## Tasks
-
-Copy this repo (don't fork it!), create a new branch on your github and start working there.  
-After finish, create a Pull Request from Your branch to Your Main and invite me.  
-This way i will be able to see all the changes, and my repo will be clean for the next candidate :).
-
-Choose which tasks You would like to tackle. Do as much as You feel comfortable :)
+This is a very simple app built using SvelteKit with TailwindCss, with a ready-to-use BaaS (Backend as a Service) called PocketBase.  It uses an open API to download a list of anime and display them. You can access anime details and add them to favorites. All favorites are then displayed on the right side of the screen. This API has a rate limiter, so sometimes there might be some errors.
 
 ## IMPORTANT
-When You finish, pls check that Your example can be run without any additional configuration, by using:
+1. Copy this repo (don't fork it!).
+2. Create a new branch on your github and start working there.  
+3. After finish, create a Pull Request from Your branch to Your Main and invite me. This way i will be able to see all the changes, and my repo will be clean for the next candidate :).
+4. Please check that Your example can be run without any additional configuration, by using:
 ```
 docker-compose up --build
 ```
-Easy way to do that: 
+Easy way to check that: 
 - delete repo
 - clone it again
 - checkout Your branch
 - run the command :)
+
+## Tasks
+Choose which tasks You would like to tackle. Do as much as You feel comfortable :)
 
 ### Easy
 
