@@ -24,6 +24,13 @@ This way i will be able to see all the changes, and my repo will be clean for th
 
 Choose which tasks You would like to tackle. Do as much as You feel comfortable :)
 
+## IMPORTANT
+When You finished, pls check that Your example can be run using:
+```
+docker-compose up --build
+```
+You can do that by deleting whole repo, cloning it again, checkout Your branch and running this command :).
+
 ### Easy
 
 Style this application a little bit. Show that you know how to use grid and flex.  
