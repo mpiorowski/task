@@ -33,7 +33,7 @@ Easy way to do that:
 - delete repo
 - clone it again
 - checkout Your branch
-- running the command :)
+- run the command :)
 
 ### Easy
 
