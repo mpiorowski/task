@@ -25,7 +25,7 @@ This way i will be able to see all the changes, and my repo will be clean for th
 Choose which tasks You would like to tackle. Do as much as You feel comfortable :)
 
 ## IMPORTANT
-When You finish, pls check that Your example can be run using:
+When You finish, pls check that Your example can be run without any additional configuration, by using:
 ```
 docker-compose up --build
 ```
