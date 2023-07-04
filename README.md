@@ -29,7 +29,11 @@ When You finish, pls check that Your example can be run using:
 ```
 docker-compose up --build
 ```
-You can do that by deleting whole repo, cloning it again, checkout Your branch and running this command :).
+Easy way to do that: 
+- delete repo
+- clone it again
+- checkout Your branch
+- running the command :)
 
 ### Easy
 
