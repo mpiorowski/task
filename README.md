@@ -32,7 +32,7 @@ This API has a rate limiter, so sometimes there might be some errors. Just refre
 docker compose up --build
 ```
 
-If you will have any questions, feel free to ask me:
+If you will have any questions, just write to me:
 `mateuszpiorowski@gmail.com`
 
 ## Tasks
