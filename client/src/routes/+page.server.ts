@@ -1,6 +1,6 @@
 import api from "$lib/server/api";
 import { error } from "@sveltejs/kit";
-import type { Actions, PageServerLoad } from "./$types";
+import type { PageServerLoad } from "./$types";
 
 type RecommendedAnime = {
     data: {
@@ -29,12 +29,3 @@ export const load = (async () => {
         recommended: recommended.data,
     };
 }) satisfies PageServerLoad;
-
-export const actions = {
-    formAction: async ({ request }) => {
-        const form = await request.formData();
-        const id = form.get("id");
-
-        return { id };
-    },
-} satisfies Actions;

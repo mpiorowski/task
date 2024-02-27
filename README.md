@@ -1,66 +1,62 @@
-# Svelte Task
+# Task
 
 ## Run the application
 
 ```
-cd client
-pnpm i
-docker-compose up --build
+npm i --prefix client
+docker compose up --build
 ```
 
 ## Project overview
 
-This is a very simple app built using SvelteKit with TailwindCss, with a ready-to-use BaaS (Backend as a Service) called PocketBase.  It uses an open API to download a list of anime and display them. You can access anime details and add them to favorites. All favorites are then displayed on the right side of the screen. This API has a rate limiter, so sometimes there might be some errors.
+This is a very simple app built using SvelteKit with TailwindCss, with a ready-to-use Go server.  
+It uses an open API to download a list of anime and display them. You can access anime details and add them to favorites.  
+All favorites are then displayed on the right side of the screen.
 
 ## IMPORTANT
-1. Copy this repo (don't fork it!).
-2. Create a new branch on Your github and start working there.  
-3. After finish, create a Pull Request from Your branch to Your Main and invite me. This way i will be able to see all the changes, and my repo will be clean for the next candidate :).
-4. Please check that Your example can be run without any additional configuration, by using:
-```
-docker-compose up --build
-```
-Easy way to check that: 
+
+This API has a rate limiter, so sometimes there might be some errors. Just refresh and try again.
+
+1. Copy this repo (don't fork it!) into Your github account.
+2. Create a new branch on Your github and start working there.
+3. After finish, create a Pull Request from Your branch to Your Main and invite me.  
+   This way i will be able to see all the changes, and my repo will be clean for the next candidate :).
+4. Please check that Your example can be run without any additional configuration:
+
 - delete repo
 - clone it again
 - switch to Your branch
-- run the command :)
+- run the command
+
+```
+docker compose up --build
+```
 
 ## Tasks
-Choose which tasks You would like to tackle. Do as much as You feel comfortable :)
 
-### Easy
+Choose which tasks You would like to tackle. Do as much as You feel comfortable :) Try not to spend more than 6 hours.
 
-Style this application a little bit. Show that you know how to use grid and flex.  
-Do everything using TailwindCss.
+### Styling
 
-### Easy
+Style this application a little bit using TailwindCss.
+Add some animation using gsap (preferably), animejs, motion or svelte animation.
+Add a table with pagination to the anime list.
 
-Add a button in the anime details screen that will remove it from favorites.
+### Functionality
 
-### Medium
-
-Advanced styling. Extend the tailwind theme, do some gradient, use Svelte Animation, show what You know and have fun. 
-
-### Medium
-
+On the anime details page, add a button to remove the anime from favorites.
 For the "Add to favorites" form action, add validation on the server side using the Zod library.  
-Make it that there is no type assertion ("as") anywhere. 
+Make it that there is no type assertion ("as") anywhere.
 
-### Medium
+### Backend
 
-Add tests using vitest or / and playwright.
+Instead of using the data/favorites.ts object, use a connected Go backend to store and load favorites.  
+The server is connected, with a workign SQLite database and a simple API.
+A little helper:
 
-### Medium - tricky
+1. Add necessary columns to the favorites table ( `system_migration.go` )
+2. Add INSERT and DELETE queries to the server ( `favorites_db.go` )
+3. Add new service layer to the server to add / remove favorites ( `favorites_http.go` )
+4. Add new endpoints to the server ( `main.go` )
 
-Add the same button to delete anime from favorites, but right in the favorites list on the right side of the screen.  
-Each anime in the favorites list should have its own special button underneath.
-
-### Hard
-
-Instead of using the data/favorites.ts object, establish a connection to PocketBase.  
-Create a table to store and load favorites from there.
-
-### Senior Full Stack
-
-Created a working backend using Go or NodeJS (preferably GO :D) and PostgreSQL / MySQL. Add setup for the docker deployment.
+To clean the database, just remove the db.sqlite files inside `system` folder and restart the Docker container.

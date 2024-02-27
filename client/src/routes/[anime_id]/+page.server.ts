@@ -38,6 +38,7 @@ export const actions = {
     addToFavorites: async ({ request }) => {
         const form = await request.formData();
 
+        // validate form
         const mal_id = form.get("mal_id") as unknown as number;
         const title = form.get("title") as unknown as string;
         const image = form.get("image") as unknown as string;
