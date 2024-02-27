@@ -37,8 +37,10 @@ If you will have any questions, feel free to ask me:
 
 ## Tasks
 
-Please, try to not spend more than 6 hours on this tasks.  
-You don't need to fully finish all of them, choose how much you want to dive into each of them, but You *must* touch all of them.
+Please, try to not spend more than 6 hours.
+You don't need to fully finish all of them, choose how much you want to dive into each of them. 
+
+But You **must** do at least one from each category.
 
 ### Styling
 
