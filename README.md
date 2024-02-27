@@ -72,6 +72,7 @@ To clean the database, just remove the `db.sqlite3` files inside `system` folder
 
 ## Reference Links
 
+- GSAP: https://greensock.com/gsap/
 - Svelte: https://svelte.dev/
 - SvelteKit: https://kit.svelte.dev/
 - Svelte Form Actions: https://kit.svelte.dev/docs/form-actions
