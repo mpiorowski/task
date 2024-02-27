@@ -1,16 +1,18 @@
 <script lang="ts">
     import { enhance } from "$app/forms";
-    import AnimeComponent from "../AnimeComponent.svelte";
+    import Anime from "../anime.svelte";
     import type { PageData } from "./$types";
 
     export let data: PageData;
 </script>
 
-<AnimeComponent
+<Anime
     title={data.anime.title}
     mal_id={data.anime.mal_id}
     image={data.anime.images.webp.image_url}
 />
+
+<p>{data.anime.synopsis}</p>
 
 <form action="?/addToFavorites" method="post" use:enhance>
     <input type="hidden" name="mal_id" value={data.anime.mal_id} />

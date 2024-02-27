@@ -1,13 +1,14 @@
-FROM node:19-alpine
+# Development
+FROM node:20-slim AS dev
 
-WORKDIR /app
+WORKDIR /client
 
-RUN npm i -g pnpm
+COPY package.json /client/package.json
+COPY package-lock.json /client/package-lock.json
 
-COPY package.json pnpm-lock.yaml /app/
+RUN npm install
 
-RUN pnpm install
+ARG SERVER_URL
+RUN echo "SERVER_URL=$SERVER_URL" > .env
 
-COPY . /app
-
-CMD ["pnpm", "dev"]
+COPY . .
