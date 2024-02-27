@@ -37,7 +37,8 @@ If you will have any questions, feel free to ask me:
 
 ## Tasks
 
-Choose which tasks You would like to tackle. Do as much as You feel comfortable :) Try not to spend more than 6 hours.
+Please, try to not spend more than 6 hours on this tasks.  
+You don't need to fully finish all of them, choose how much you want to dive into each of them, but You *must* touch all of them.
 
 ### Styling
 
@@ -55,6 +56,7 @@ Make it that there is no type assertion ("as") anywhere.
 
 Instead of using the data/favorites.ts object, use a connected Go backend to store and load favorites.  
 The server is connected, with a workign SQLite database and a simple API.
+
 A little helper:
 
 1. Add necessary columns to the favorites table ( `system_migration.go` )
@@ -62,4 +64,4 @@ A little helper:
 3. Add new service layer to the server to add / remove favorites ( `favorites_http.go` )
 4. Add new endpoints to the server ( `main.go` )
 
-To clean the database, just remove the db.sqlite files inside `system` folder and restart the Docker container.
+To clean the database, just remove the `db.sqlite3` files inside `system` folder and restart the Docker container.
