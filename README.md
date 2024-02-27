@@ -32,6 +32,9 @@ This API has a rate limiter, so sometimes there might be some errors. Just refre
 docker compose up --build
 ```
 
+If you will have any questions, feel free to ask me:
+`mateuszpiorowski@gmail.com`
+
 ## Tasks
 
 Choose which tasks You would like to tackle. Do as much as You feel comfortable :) Try not to spend more than 6 hours.
