@@ -9,8 +9,8 @@ docker compose up --build
 
 ## Project overview
 
-This is a very simple app built using SvelteKit with TailwindCss, with a ready-to-use Go server.  
-It uses an open API to download a list of anime and display them. You can access anime details and add them to favorites.  
+This is a very simple app built using SvelteKit, with a ready-to-use Go server.
+It uses an open API to download a list of anime and display them. You can access anime details and add them to favorites.
 All favorites are then displayed on the right side of the screen.
 
 ## IMPORTANT
