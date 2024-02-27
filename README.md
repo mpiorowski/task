@@ -38,9 +38,11 @@ If you will have any questions, feel free to ask me:
 ## Tasks
 
 Please, try to not spend more than 6 hours.
-You don't need to fully finish all of them, choose how much you want to dive into each of them. 
+You don't need to fully finish all of them, choose how much you want to dive into each of them.
 
-**But You must touch all of them!** Sorry :).
+**But You must at least touch all of them. Sorry :)**
+
+The Backend part might be the hardest, so if it will start to take too much time, just show some sql knowlegde or write one simple endpoint.
 
 ### Styling
 
@@ -51,12 +53,12 @@ Add a table with pagination to the anime list.
 ### Functionality
 
 On the anime details page, add a button to remove the anime from favorites.
-For the "Add to favorites" form action, add validation on the server side using the Zod library.  
+For the "Add to favorites" form action, add validation on the server side using the Zod library.
 Make it that there is no type assertion ("as") anywhere.
 
 ### Backend
 
-Instead of using the data/favorites.ts object, use a connected Go backend to store and load favorites.  
+Instead of using the data/favorites.ts object, use a connected Go backend to store and load favorites.
 The server is connected, with a workign SQLite database and a simple API.
 
 A little helper:
@@ -67,3 +69,11 @@ A little helper:
 4. Add new endpoints to the server ( `main.go` )
 
 To clean the database, just remove the `db.sqlite3` files inside `system` folder and restart the Docker container.
+
+## Reference Links
+
+- Svelte: https://svelte.dev/
+- SvelteKit: https://kit.svelte.dev/
+- Svelte Form Actions: https://kit.svelte.dev/docs/form-actions
+- Go By Example: https://gobyexample.com/
+- Go Tour: https://go.dev/tour/welcome/1
