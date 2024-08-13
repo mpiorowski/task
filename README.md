@@ -60,6 +60,7 @@ Make it that there is no type assertion ("as") anywhere.
 ### Backend
 
 Instead of using the data/favorites.ts object, use a connected Go backend to store and load favorites.
+Whenever a user adds more than 5 favorites, show a toast that a limit has been reached.
 The server is connected, with a workign SQLite database and a simple API.
 
 A little helper:
