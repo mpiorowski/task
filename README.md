@@ -54,6 +54,7 @@ Add a table with pagination to the anime list.
 
 On the anime details page, add a button to remove the anime from favorites.
 For the "Add to favorites" form action, add validation on the server side using the Zod library.
+When user add or remove anime from favorites, show a toast notification.
 Make it that there is no type assertion ("as") anywhere.
 
 ### Backend
