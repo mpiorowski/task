@@ -1,2 +1,2 @@
 #  Development
-FROM golang:1.22 as dev
+FROM golang:1.22 AS dev
