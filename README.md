@@ -19,7 +19,7 @@ This API has a rate limiter, so sometimes there might be some errors. Just refre
 
 1. Copy this repo (don't fork it!) into Your github account.
 2. Create a new branch on Your github and start working there.
-3. After finish, create a Pull Request from Your branch to Your Main, and send me a link (don't invite me!).  
+3. After finish, create a Pull Request from Your branch to Your Main, and send me a link (**DON'T INVITE ME!**).  
    This way i will be able to see all the changes, and my repo will be clean for the next candidate :).
 4. Please check that Your example can be run without any additional configuration:
 
